@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header,
+header a {
+    background-color: rgb(0, 132, 255);
+    color: white;
+    font-family:'Protest Revolution', sans-serif;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.container a {
+    padding: 8px;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+.menu > li {
+    padding: 1em;
+    border-top: 4px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.menu,
+.sub-menu {
+    list-style: none;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 110px;
+    top: 100%;
+}
+
+.sub-menu li {
+    display: block;
+    padding: 4px 0 4px 0;
+}
+
+.sub-menu a {
+    background-color: transparent;
+    color: black;
+}
+
+.menu li:hover .sub-menu {
+    display: block;
+    border-top: 2px solid black;
+}
+
+.menu > li:hover {
+    border-top: 4px solid white;
+}
+
+
+.sobre-loja img {
+    width: 450px;
+    height: 290px;
+    padding: 24px 0 32px 36px;
+    margin: 20px 15px 15px 80px;
+}
+
+.sobre-loja {
+    display: flex;
+    align-items: center;
+}
+
+.st {
+    padding: 0 0 0 2em;
+    font-family: 'Roboto';
+}
+
+.st h2 {
+    padding-bottom: 1em;
+    color: rgb(0, 132, 255);
+    border-bottom: 2px solid;
+    font-style: italic;
+    margin: 0 0 0.6em 0;
+}
+
+.sobre-loja .st p {
+    padding-top: 32px;
+}
+
+.produtos {
+    display: inline-block;
+    padding-right: 1.5em ;
+}
+
+.produtos img {
+    width: 150px;
+    padding: 0 0 1em 0;
+}
+
+.produtos h3 {
+    padding-bottom: 8px;
+    font-size: 16px;
+}
+
+.produtos p {
+    padding-bottom: 8px;
+    font-size: 12px;
+}
+
+button {
+    padding: 5px 2.7em 5px 2.7em;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto';
+    border: none;
+    border-radius: 8px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer {
+    padding: 2.5em;
+    margin-top: 1.5em;
+    background-color: rgb(0, 132, 255);
+}
+
+/* Tablet */
+
+@media screen and (min-width:820px) and (max-width:1180px) {
+    
+    .conteudo {
+        display: inline-block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .container li {
+        font-size: 1.5em;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .sobre-loja .st {
+        padding: 0 0 0 1.5em;
+    }
+
+    .sobre-loja img {
+        height: 360px;
+        width: 400px;
+        margin: 0;
+        padding: 12px 0 18px 0;
+    }
+
+    .sobre-loja h2 {
+        padding: 16px 0;
+        margin: 0;
+    }
+
+    .sobre-loja .st p {
+        font-size: 16px;
+        padding: 1em 0;
+    }
+
+    aside .st {
+        padding: 0;
+    }
+
+    .st h2 {
+        padding: 10px 0 1em 0 ;
+        margin: 0;
+    }
+
+    .st .produtos {
+        padding: 0 0 0 16px;
+    }
+
+    aside .st img {
+        height: 250px;
+        width: 250px;
+        padding: 0 0 8px 12px;
+    }
+
+    .st a {
+        padding: 0;
+        font-size: 0;
+    }
+
+    .st h3 {
+        font-size: 1.3em;
+    }
+
+    .st p {
+        font-size: 13px;
+    }
+
+    .st button {
+        margin: 0 5em 0 5em;
+    }
+}
+
+
+/* Mobile */
+
+
+@media screen and (max-width:640px){
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .container li {
+        font-size: 16px;
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    .sub-menu li {
+        background-color: antiquewhite;
+    }
+
+    .sobre-loja {
+        display: block;
+    }
+
+    .sobre-loja img {
+        width: 330px;
+        height: 200px;
+        margin: 0;
+        padding: 16px 0 6px 12px;
+    }
+
+    .sobre-loja h2{
+        margin: 0;
+        padding: 6px 0 0;
+        font-size: 24px;
+    }
+
+    .sobre-loja .st p {
+        font-size: 12px;
+        padding-top: 14px;
+    }
+
+    .st {
+        padding-left: 12px ;
+    }
+
+    aside .produtos {
+        padding: 0;
+
+    }
+
+    aside .st {
+        padding: 0;
+    }
+
+    aside .st h2 {
+        font-size: 24px;
+        padding: 14px 0 10px 12px;
+        margin: 0;
+    }
+
+    aside .st img {
+        height: 320px;
+        width: 310px;
+        margin-top: 8px;
+        padding: 0 0 8px 12px;
+    }
+
+    .st a {
+        padding: 0;
+        font-size: 0;
+    }
+
+    .st h3 {
+        margin: 0 2em 0 2em
+    }
+
+    .st p {
+        font-size: 14px;
+        padding: 0 0 8px 12px;
+    }
+
+    .st button {
+        margin: 0 5em 0 5em;
+    }
+
+}
+
+
