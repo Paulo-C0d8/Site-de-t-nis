@@ -166,6 +166,10 @@ footer {
         padding: 0 0 0 1.5em;
     }
 
+    .sub-menu li {
+        font-size: 13px;
+    }
+
     .sobre-loja img {
         height: 360px;
         width: 400px;
@@ -245,6 +249,7 @@ footer {
 
     .sub-menu li {
         background-color: antiquewhite;
+        font-size: 14px;
     }
 
     .sobre-loja {
